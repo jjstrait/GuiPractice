@@ -114,7 +114,7 @@ public class MainWindow extends javax.swing.JFrame {
         try {
             input = Double.parseDouble(txtTemp.getText());
             lblFahrenheitOutput.setText(df.format(input));
-            lblCelsiusOutput.setText(df.format(tempUtil.ConvertToFahrenheit(input))+"");
+            lblCelsiusOutput.setText(df.format(tempUtil.ConvertFahrenheitToCelsius(input))+"");
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             txtTemp.setText(e.getMessage());

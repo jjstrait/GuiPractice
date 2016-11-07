@@ -110,7 +110,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void btnConvertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConvertActionPerformed
         TempUtlilties tempUtil = TempUtlilties.getInstance();
         double input;
-        DecimalFormat df = new DecimalFormat(".######");
+        DecimalFormat df = new DecimalFormat(".##");
         try {
             input = Double.parseDouble(txtTemp.getText());
             lblFahrenheitOutput.setText(df.format(input));
